@@ -1,16 +1,3 @@
-html,
-body,
-#root {
-}
-
-a {
-  color: white;
-}
-a:link,
-a:visited {
-  color: white;
-}
-
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
