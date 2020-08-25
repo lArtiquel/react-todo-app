@@ -2,7 +2,7 @@ import React from 'react'
 import { ThemeProvider } from '@material-ui/core/styles'
 import { CssBaseline } from '@material-ui/core'
 import Theme from './theme'
-import TaskPage from './pages/task'
+import TaskPage from './components/pages/task'
 
 const App = () => {
   return (

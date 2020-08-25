@@ -11,7 +11,7 @@ import {
   ToggleTodoStateAction,
   EditTodoAction,
   ToggleTodoToBeDeletedStateAction
-} from '../store/actions/taskActions'
+} from '../../../store/actions/taskActions'
 
 const useStyles = makeStyles((theme) => ({
   successColor: {
@@ -156,7 +156,7 @@ Todo.propTypes = {
   toggleTodoToBeDeletedState: PropTypes.func.isRequired
 }
 
-const mapActionToProps = (dispatch) => {
+const mapDispatchToProps = (dispatch) => {
   return {
     toggleTodoState: (id) => dispatch(ToggleTodoStateAction(id)),
     editTodo: (id, newTodoContent) =>
@@ -166,4 +166,4 @@ const mapActionToProps = (dispatch) => {
   }
 }
 
-export default connect(null, mapActionToProps)(Todo)
+export default connect(null, mapDispatchToProps)(Todo)

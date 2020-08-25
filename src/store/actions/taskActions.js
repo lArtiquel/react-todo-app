@@ -1,8 +1,9 @@
-import { TaskActions } from '../../constants/actions'
+import { v4 } from 'uuid'
+import { TaskActions } from '../constants/actions'
 
 export const AddTodoAction = (body) => {
   const todo = {
-    id: (Math.random() * 10101010101).toString(),
+    id: v4(),
     body,
     isDone: false
   }

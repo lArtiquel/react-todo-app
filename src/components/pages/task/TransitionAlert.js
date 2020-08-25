@@ -4,11 +4,11 @@ import { Button, Box } from '@material-ui/core'
 import Collapse from '@material-ui/core/Collapse'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
-import { getDeletedTodoId } from '../store/selectors/taskSelector'
+import { getDeletedTodoId } from '../../../store/selectors/taskSelector'
 import {
   ToggleTodoToBeDeletedStateAction,
   DeleteTodoPermanentlyAction
-} from '../store/actions/taskActions'
+} from '../../../store/actions/taskActions'
 
 const TransitionAlert = ({
   my,
@@ -71,7 +71,7 @@ const mapStateToProps = (state) => {
   }
 }
 
-const mapActionToProps = (dispatch) => {
+const mapDispatchToProps = (dispatch) => {
   return {
     toggleTodoToBeDeletedState: (id) =>
       dispatch(ToggleTodoToBeDeletedStateAction(id)),
@@ -79,4 +79,4 @@ const mapActionToProps = (dispatch) => {
   }
 }
 
-export default connect(mapStateToProps, mapActionToProps)(TransitionAlert)
+export default connect(mapStateToProps, mapDispatchToProps)(TransitionAlert)

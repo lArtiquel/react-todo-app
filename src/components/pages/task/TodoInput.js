@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef, useCallback } from 'react'
 import { Box, Button, TextField } from '@material-ui/core'
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
-import { AddTodoAction } from '../store/actions/taskActions'
+import { AddTodoAction } from '../../../store/actions/taskActions'
 
 const TodoInput = ({ my, addTodo }) => {
   const [todo, setTodo] = useState('')

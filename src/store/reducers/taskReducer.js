@@ -1,27 +1,26 @@
-import { TaskActions } from '../../constants/actions'
+import { TaskActions } from '../constants/actions'
 
 const initState = {
   lastDeletedTodoId: '',
-
   todos: [
+    {
+      id: '0',
+      isDone: true,
+      body:
+        'Create todo app that helps users to manage their daily tasks. Todos must be saved in browser storage.',
+      isMarkedToBeDeleted: false
+    },
     {
       id: '1',
       isDone: true,
-      body: 'Create todo app that helps users to manage their daily tasks.',
+      body: 'Create todo examples (this could be your todos).',
       isMarkedToBeDeleted: false
     },
     {
       id: '2',
       isDone: true,
       body:
-        'Create todo app that holds todos during the browser session. This means that tasks won`t be sent to the server or saved anywhere in the browser.',
-      isMarkedToBeDeleted: false
-    },
-    {
-      id: '3',
-      isDone: false,
-      body:
-        'Create todo app that stores todos on the server and uses the most advanced security tools and techniques. Check my github for more, probably it`s already done;)',
+        'Create todo app that stores todos on the server and uses the most advanced security tools and techniques. Check my github for more.',
       isMarkedToBeDeleted: false
     }
   ]
