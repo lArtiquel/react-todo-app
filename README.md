@@ -20,10 +20,11 @@ npm run start
 ```
 
 **Note:**
-Todo app remembers todos only during the browser session.
-This means that tasks won't be saved neither somewhere on server nor in browser.
+Todo app saves todos in browser storage.
+
 There will be one more todo app that will be storing todos on the server, but not this one.
 
 If you liked this app, feel free to leave a star.
+
 
 ***Best Regards, Arti Tsv.***
